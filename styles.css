@@ -1,16 +1,14 @@
 :root {
     --primary-black: #000000;
-    --primary-black-dark: #222222;
-    --accent-red: #cf2e2e;
-    --accent-green: #00a86b;
-    --accent-red-dark: #a82828;
-    --text-dark: #111111;
-    --text-light: #4a4a5a;
-    --bg-light: #f0f0f0;
-    --bg-white: #ffffff;
-    --border-light: #e1e8ed;
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --accent-red: #ff4444;
+    --accent-green: #00ff88;
+    --text-white: #ffffff;
+    --text-light: #cccccc;
+    --bg-dark: #0a0a0a;
+    --bg-card: #151515;
+    --border-light: #333333;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
     --radius: 8px;
     --max-width: 1100px;
 }
@@ -28,8 +26,8 @@ html {
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
-    color: var(--text-dark);
-    background: var(--bg-white);
+    color: var(--text-white);
+    background: var(--bg-dark);
 }
 
 .container {
@@ -39,13 +37,13 @@ body {
 }
 
 a {
-    color: var(--primary-black);
+    color: var(--accent-red);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 a:hover {
-    color: var(--primary-black);
+    color: var(--accent-red);
 }
 
 .header {
@@ -53,7 +51,7 @@ a:hover {
     top: 0;
     left: 0;
     right: 0;
-    background: var(--bg-white);
+    background: var(--bg-dark);
     border-bottom: 1px solid var(--border-light);
     z-index: 100;
 }
@@ -70,7 +68,7 @@ a:hover {
 .logo {
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--primary-black);
+    color: var(--accent-red);
     letter-spacing: -0.02em;
 }
 
@@ -87,7 +85,7 @@ a:hover {
 }
 
 .nav-links a:hover {
-    color: var(--primary-black);
+    color: var(--accent-red);
 }
 
 .hero {
@@ -107,7 +105,7 @@ a:hover {
 .hero h1 {
     font-size: clamp(2.5rem, 6vw, 3.5rem);
     font-weight: 700;
-    color: var(--text-dark);
+    color: var(--text-white);
     line-height: 1.15;
     margin-bottom: 1.25rem;
     letter-spacing: -0.03em;
@@ -133,13 +131,13 @@ a:hover {
 }
 
 .btn-primary {
-    background: var(--accent-red);
+    background: var(--accent-red); color: var(--primary-black);
     color: white;
     border: none;
 }
 
 .btn-primary:hover {
-    background: var(--accent-red-dark);
+    background: var(--accent-green); color: var(--primary-black);
     transform: translateY(-1px);
     box-shadow: var(--shadow-md);
 }
@@ -157,7 +155,7 @@ section h2 {
 }
 
 .about {
-    background: var(--bg-white);
+    background: var(--bg-dark);
 }
 
 .about-grid {
@@ -167,7 +165,7 @@ section h2 {
 }
 
 .about-card {
-    background: var(--bg-light);
+    background: var(--bg-card);
     padding: 2rem;
     border-radius: var(--radius);
     border: 1px solid var(--border-light);
@@ -177,7 +175,7 @@ section h2 {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
-    color: var(--primary-black);
+    color: var(--accent-red);
 }
 
 .about-card p {
@@ -198,7 +196,7 @@ section h2 {
 }
 
 .training-card {
-    background: var(--bg-white);
+    background: var(--bg-dark);
     padding: 2rem;
     border-radius: var(--radius);
     text-align: center;
@@ -215,7 +213,7 @@ section h2 {
 .training-day {
     font-size: 1rem;
     font-weight: 600;
-    color: var(--primary-black);
+    color: var(--accent-red);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 0.25rem;
@@ -224,14 +222,14 @@ section h2 {
 .training-time {
     font-size: 1.75rem;
     font-weight: 700;
-    color: var(--text-dark);
+    color: var(--text-white);
     margin-bottom: 1rem;
 }
 
 .training-type {
     font-size: 1rem;
     font-weight: 500;
-    color: var(--primary-black);
+    color: var(--accent-red);
     margin-bottom: 0.25rem;
 }
 
@@ -248,7 +246,7 @@ section h2 {
 }
 
 .contact {
-    background: var(--bg-white);
+    background: var(--bg-dark);
     text-align: center;
 }
 
@@ -273,13 +271,13 @@ section h2 {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: var(--primary-black);
+    color: var(--accent-red);
     margin-bottom: 0.25rem;
 }
 
 .contact-item a,
 .contact-item span {
-    color: var(--text-dark);
+    color: var(--text-white);
     font-weight: 500;
 }
 
@@ -341,7 +339,7 @@ section h2 {
 .event-card {
     display: flex;
     gap: 1.5rem;
-    background: var(--bg-white);
+    background: var(--bg-dark);
     padding: 1.5rem;
     border-radius: var(--radius);
     border: 1px solid var(--border-light);
@@ -352,7 +350,7 @@ section h2 {
     flex-shrink: 0;
     width: 60px;
     height: 60px;
-    background: var(--accent-red);
+    background: var(--accent-red); color: var(--primary-black);
     border-radius: var(--radius);
     display: flex;
     align-items: center;
@@ -391,7 +389,7 @@ section h2 {
 }
 
 .pricing-card {
-    background: var(--bg-white);
+    background: var(--bg-dark);
     padding: 2rem;
     border-radius: var(--radius);
     border: 2px solid var(--primary-black);
@@ -399,7 +397,7 @@ section h2 {
 }
 
 .pricing-card.featured {
-    border-color: var(--primary-black);
+    border-color: var(--accent-red);
     position: relative;
 }
 
@@ -411,12 +409,12 @@ section h2 {
 .pricing-amount {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--primary-black);
+    color: var(--accent-red);
     margin: 1rem 0;
 }
 
 .pricing-card.featured .pricing-amount {
-    color: var(--primary-black);
+    color: var(--accent-red);
 }
 
 .pricing-note {
@@ -456,7 +454,7 @@ section h2 {
 .form-group textarea:focus,
 .form-group select:focus {
     outline: none;
-    border-color: var(--primary-black);
+    border-color: var(--accent-red);
     box-shadow: 0 0 0 3px rgba(45, 138, 95, 0.1);
 }
 
@@ -481,17 +479,17 @@ section h2 {
 }
 
 .records-table th {
-    background: var(--accent-red);
+    background: var(--accent-red); color: var(--primary-black);
     color: white;
     font-weight: 600;
 }
 
 .records-table tr:hover {
-    background: var(--bg-light);
+    background: var(--bg-card);
 }
 
 .records-note {
-    background: var(--bg-light);
+    background: var(--bg-card);
     padding: 1.5rem;
     border-radius: var(--radius);
     margin-top: 2rem;
