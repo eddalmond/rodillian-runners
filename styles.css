@@ -7,8 +7,8 @@
     --theme-palette-color-6: #f2f5f7;
 
     --primary-black: #000000;
-    --accent-red: #ff4444;
-    --accent-green: #00ff88;
+    --accent-red: #e43028;
+    --accent-green: #5ec40f;
     --text-white: #ffffff;
     --text-light: #cccccc;
     --bg-dark: #0a0a0a;
@@ -44,7 +44,7 @@ body {
 }
 
 a {
-    color: var(--accent-red);
+    color: #e43028;
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -58,7 +58,7 @@ a:hover {
     top: 0;
     left: 0;
     right: 0;
-    background: #0a0a0a;
+    background: #c91d20;
     border-bottom: 1px solid var(--border-light);
     z-index: 100;
 }
@@ -86,7 +86,7 @@ a:hover {
 }
 
 .nav-links a {
-    color: var(--accent-red);
+    color: #e43028;
     font-weight: 500;
     font-size: 0.95rem;
 }
@@ -138,7 +138,7 @@ a:hover {
 }
 
 .btn-primary {
-    background: var(--accent-red);
+    background: #2872fa;
     color: var(--primary-black);
     border: none;
 }
@@ -183,7 +183,7 @@ section h2 {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
-    color: var(--accent-red);
+    color: #e43028;
 }
 
 .about-card p {
@@ -221,7 +221,7 @@ section h2 {
 .training-day {
     font-size: 1rem;
     font-weight: 600;
-    color: var(--accent-red);
+    color: #e43028;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 0.25rem;
@@ -237,7 +237,7 @@ section h2 {
 .training-type {
     font-size: 1rem;
     font-weight: 500;
-    color: var(--accent-red);
+    color: #e43028;
     margin-bottom: 0.25rem;
 }
 
@@ -279,7 +279,7 @@ section h2 {
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: var(--accent-red);
+    color: #e43028;
     margin-bottom: 0.25rem;
 }
 
@@ -290,7 +290,8 @@ section h2 {
 }
 
 .footer {
-    background: #0a0a0a;
+    background: #c91d20;
+    background: #c91d20;
     color: rgba(255, 255, 255, 0.7);
     padding: 2rem 0;
     text-align: center;
@@ -358,7 +359,7 @@ section h2 {
     flex-shrink: 0;
     width: 60px;
     height: 60px;
-    background: var(--accent-red);
+    background: #2872fa;
     border-radius: var(--radius);
     display: flex;
     align-items: center;
@@ -405,7 +406,7 @@ section h2 {
 }
 
 .pricing-card.featured {
-    border-color: var(--accent-red);
+    border-color: #e43028;
     position: relative;
 }
 
@@ -417,12 +418,12 @@ section h2 {
 .pricing-amount {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--accent-red);
+    color: #e43028;
     margin: 1rem 0;
 }
 
 .pricing-card.featured .pricing-amount {
-    color: var(--accent-red);
+    color: #e43028;
 }
 
 .pricing-note {
@@ -464,7 +465,7 @@ section h2 {
 .form-group textarea:focus,
 .form-group select:focus {
     outline: none;
-    border-color: var(--accent-red);
+    border-color: #e43028;
     box-shadow: 0 0 0 3px rgba(255, 68, 68, 0.1);
 }
 
@@ -489,7 +490,7 @@ section h2 {
 }
 
 .records-table th {
-    background: var(--accent-red);
+    background: #2872fa;
     color: white;
     font-weight: 600;
 }
