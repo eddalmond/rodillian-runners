@@ -1,4 +1,11 @@
 :root {
+    --theme-palette-color-1: #192a3d;
+    --theme-palette-color-2: #2872fa;
+    --theme-palette-color-3: #3A4F66;
+    --theme-palette-color-4: #192a3d;
+    --theme-palette-color-5: #e1e8ed;
+    --theme-palette-color-6: #f2f5f7;
+
     --primary-black: #000000;
     --accent-red: #ff4444;
     --accent-green: #00ff88;
@@ -24,7 +31,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     line-height: 1.6;
     color: var(--text-white);
     background: var(--bg-dark);
@@ -43,7 +50,7 @@ a {
 }
 
 a:hover {
-    color: var(--accent-red);
+    color: var(--accent-green);
 }
 
 .header {
@@ -51,7 +58,7 @@ a:hover {
     top: 0;
     left: 0;
     right: 0;
-    background: var(--bg-dark);
+    background: #0a0a0a;
     border-bottom: 1px solid var(--border-light);
     z-index: 100;
 }
@@ -68,7 +75,7 @@ a:hover {
 .logo {
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--accent-red);
+    color: var(--text-white);
     letter-spacing: -0.02em;
 }
 
@@ -79,18 +86,18 @@ a:hover {
 }
 
 .nav-links a {
-    color: var(--text-light);
+    color: var(--accent-red);
     font-weight: 500;
     font-size: 0.95rem;
 }
 
 .nav-links a:hover {
-    color: var(--accent-red);
+    color: var(--accent-green);
 }
 
 .hero {
     padding: 8rem 1.5rem 5rem;
-    background: linear-gradient(135deg, var(--bg-light) 0%, #e8ffe8 100%);
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
     text-align: center;
     min-height: 70vh;
     display: flex;
@@ -131,13 +138,14 @@ a:hover {
 }
 
 .btn-primary {
-    background: var(--accent-red); color: var(--primary-black);
-    color: white;
+    background: var(--accent-red);
+    color: var(--primary-black);
     border: none;
 }
 
 .btn-primary:hover {
-    background: var(--accent-green); color: var(--primary-black);
+    background: var(--accent-green);
+    color: var(--primary-black);
     transform: translateY(-1px);
     box-shadow: var(--shadow-md);
 }
@@ -184,7 +192,7 @@ section h2 {
 }
 
 .training {
-    background: linear-gradient(180deg, var(--bg-light) 0%, var(--bg-white) 100%);
+    background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
 }
 
 .training-grid {
@@ -196,7 +204,7 @@ section h2 {
 }
 
 .training-card {
-    background: var(--bg-dark);
+    background: var(--bg-card);
     padding: 2rem;
     border-radius: var(--radius);
     text-align: center;
@@ -282,7 +290,7 @@ section h2 {
 }
 
 .footer {
-    background: var(--text-dark);
+    background: #0a0a0a;
     color: rgba(255, 255, 255, 0.7);
     padding: 2rem 0;
     text-align: center;
@@ -314,7 +322,7 @@ section h2 {
 /* Page header */
 .page-header {
     padding: 8rem 1.5rem 4rem;
-    background: linear-gradient(135deg, var(--bg-light) 0%, #e8ffe8 100%);
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
     text-align: center;
 }
 
@@ -339,7 +347,7 @@ section h2 {
 .event-card {
     display: flex;
     gap: 1.5rem;
-    background: var(--bg-dark);
+    background: var(--bg-card);
     padding: 1.5rem;
     border-radius: var(--radius);
     border: 1px solid var(--border-light);
@@ -350,7 +358,7 @@ section h2 {
     flex-shrink: 0;
     width: 60px;
     height: 60px;
-    background: var(--accent-red); color: var(--primary-black);
+    background: var(--accent-red);
     border-radius: var(--radius);
     display: flex;
     align-items: center;
@@ -389,10 +397,10 @@ section h2 {
 }
 
 .pricing-card {
-    background: var(--bg-dark);
+    background: var(--bg-card);
     padding: 2rem;
     border-radius: var(--radius);
-    border: 2px solid var(--primary-black);
+    border: 1px solid var(--border-light);
     text-align: center;
 }
 
@@ -447,6 +455,8 @@ section h2 {
     border-radius: var(--radius);
     font-family: inherit;
     font-size: 1rem;
+    background: var(--bg-card);
+    color: var(--text-white);
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -455,7 +465,7 @@ section h2 {
 .form-group select:focus {
     outline: none;
     border-color: var(--accent-red);
-    box-shadow: 0 0 0 3px rgba(45, 138, 95, 0.1);
+    box-shadow: 0 0 0 3px rgba(255, 68, 68, 0.1);
 }
 
 .form-group textarea {
@@ -479,7 +489,7 @@ section h2 {
 }
 
 .records-table th {
-    background: var(--accent-red); color: var(--primary-black);
+    background: var(--accent-red);
     color: white;
     font-weight: 600;
 }
