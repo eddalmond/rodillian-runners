@@ -16,6 +16,9 @@ function createHeader(currentPage) {
                 <li><a href="/membership/" ${currentPage === 'membership' ? 'class="active"' : ''}>Membership</a></li>
                 <li><a href="/records/" ${currentPage === 'records' ? 'class="active"' : ''}>Records</a></li>
                 <li><a href="/championship/" ${currentPage === 'championship' ? 'class="active"' : ''}>Championship</a></li>
+                <li><a href="/championship-race-calendar/" ${currentPage === 'championship-race-calendar' ? 'class="active"' : ''}>Race Calendar</a></li>
+                <li><a href="/distance-league/" ${currentPage === 'distance-league' ? 'class="active"' : ''}>Distance League</a></li>
+                <li><a href="/photos/" ${currentPage === 'photos' ? 'class="active"' : ''}>Photos</a></li>
                 <li><a href="/contact/" ${currentPage === 'contact' ? 'class="active"' : ''}>Contact</a></li>
             </ul>
         </nav>
